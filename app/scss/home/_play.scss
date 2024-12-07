@@ -1,0 +1,25 @@
+.play {
+  @include bg;
+  background-position: top;
+  padding: 100px 0 0;
+  margin-top: -30px;
+  background-image: url("../images/play-bg.png");
+
+  &__title {
+    max-width: 650px;
+    text-align: center;
+    font-size: 72px;
+    line-height: 1.15;
+    letter-spacing: -2.88px;
+    margin: 0 auto 46px;
+  }
+
+  &__bottom {
+    @include flex-center;
+    margin-top: 150px;
+    padding: 24px 0;
+    border-top: 1px solid #151C2E;
+    background: rgba(7, 12, 23, 0.64);
+    backdrop-filter: blur(5.849999904632568px);
+  }
+}

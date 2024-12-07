@@ -1,0 +1,23 @@
+.title-section {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 36px;
+  letter-spacing: -1.28px;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  display: block;
+  color: $blue;
+
+  &--center {
+    margin: 0 auto 36px;
+    max-width: max-content;
+  }
+}

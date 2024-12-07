@@ -1,0 +1,22 @@
+.bonuses {
+  margin-top: -95px;
+
+  &__inner {
+    @include flex-align-center(100);
+    align-items: center;
+  }
+
+  &__img {
+    margin-left: -35px;
+  }
+
+  &__content {
+    margin-top: 70px;
+    max-width: 670px;
+  }
+
+  &__text {
+    max-width: 660px;
+    color: rgba($white, .65);
+  }
+}
