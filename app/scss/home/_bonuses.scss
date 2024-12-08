@@ -1,5 +1,14 @@
 .bonuses {
   margin-top: -95px;
+  @include r($lg) {
+    margin-top: -60px;
+  }
+  @include r($tablet) {
+    margin-top: -30px;
+  }
+  @media (max-width: 680px) {
+    margin-top: 0;
+  }
 
   &__inner {
     @include flex-align-center(100);
@@ -10,9 +19,14 @@
     @media (max-width: 1350px) {
       gap: 45px;
     }
+    @media (max-width: 1300px) {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__img {
+    @include objectCoverBg;
     margin-left: -35px;
     @media (max-width: 1650px) {
       margin-left: -25px;
@@ -20,6 +34,26 @@
     @media (max-width: 1450px) {
       width: auto;
       height: 525px;
+    }
+    @media (max-width: 1300px) {
+      margin-left: 0;
+      height: 410px;
+    }
+    @include r($desktop) {
+      height: 370px;
+    }
+    @include r($lg) {
+      height: 340px;
+    }
+    @media (max-width: 835px) {
+      height: 310px;
+    }
+    @include r($sm) {
+      height: 290px;
+    }
+    @include r($phone) {
+      height: auto;
+      width: 100%;
     }
   }
 
@@ -31,6 +65,10 @@
     }
     @media (max-width: 1330px) {
       margin-top: 80px;
+    }
+    @media (max-width: 1300px) {
+      margin-top: 0;
+      text-align: center;
     }
   }
 
@@ -51,6 +89,29 @@
     }
     @media (max-width: 1330px) {
       font-size: 44px;
+    }
+    @include r($desktop) {
+      font-size: 40px;
+      max-width: 610px;
+      margin: 0 auto 30px;
+    }
+    @include r($lg) {
+      font-size: 36px;
+      max-width: 550px;
+    }
+    @media (max-width: 835px) {
+      font-size: 32px;
+      max-width: 470px;
+    }
+    @include r($sm) {
+      font-size: 30px;
+      max-width: 440px;
+    }
+    @media (max-width: 460px) {
+      font-size: 27px;
+    }
+    @media (max-width: 430px) {
+      font-size: 26px;
     }
   }
 }
