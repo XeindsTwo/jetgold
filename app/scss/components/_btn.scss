@@ -12,6 +12,9 @@
   border: 2px solid rgba(255, 255, 255, 0.26);
   background: #376FFF;
   box-shadow: 0px -8px 12.6px 0px rgba(255, 255, 255, 0.47) inset, 0px 4px 50.9px 0px rgba(55, 111, 255, 0.23);
+  @include r($lg) {
+    padding: 12px 17px 12px 17px;
+  }
 
   &:hover {
     background-color: #105dd0;

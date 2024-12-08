@@ -2,7 +2,6 @@ export function setupMobileMenu() {
   const html = document.documentElement;
   const menuBtn = document.querySelector('.menu-btn');
   const headerMobile = document.querySelector('.header__mobile');
-  const headerLogo = document.querySelector('.header__logo');
   const anchors = document.querySelectorAll('a.mobile');
 
   menuBtn.addEventListener('click', () => {
@@ -10,7 +9,6 @@ export function setupMobileMenu() {
     html.classList.toggle('active');
     menuBtn.classList.toggle('active');
     headerMobile.classList.toggle('active');
-    headerLogo.classList.toggle('active');
   });
 
   function scrollToTarget(targetId) {
@@ -19,7 +17,6 @@ export function setupMobileMenu() {
       html.classList.remove('active');
       headerMobile.classList.remove('active');
       menuBtn.classList.remove('active');
-      headerLogo.classList.remove('active');
       setTimeout(() => {
         const targetOffset = targetSection.offsetTop - 25;
         window.scrollTo({top: targetOffset, behavior: 'smooth'});

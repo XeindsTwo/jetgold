@@ -4,10 +4,11 @@
 @import 'vendor/mixin';
 @import 'vendor/global';
 
-@import "components/footer";
-@import "components/header";
 @import "components/title-section";
 @import "components/btn";
+@import "components/menu-btn";
+@import "components/footer";
+@import "components/header";
 
 @import "home/home";
 @import "home/about";
